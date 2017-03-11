@@ -11,9 +11,24 @@
    ========================================================================== */
 
 html {
-    color: #222;
+    background-color: #018954;
     font-size: 1em;
     line-height: 1.4;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.schema {
+    width: 550px;
+    height: ;
 }
 
 /*
@@ -267,6 +282,8 @@ textarea {
     img {
         max-width: 100% !important;
     }
+
+
 
     p,
     h2,

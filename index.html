@@ -3,9 +3,20 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>FitTrailUA</title>
+        <meta name="description" content="Рекреаційно-оздоровчий маршрут для бігу чи прогулянок, облаштований спортивним та інформаційним обладнанням.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta property="og:title" content="FitTrail · Спортивний маршрут на ВДНГ"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content=""/>
+        <meta property="og:image" content=""/>
+        <meta property="og:image:width" content="1200"/>
+        <meta property="og:image:height" content="650"/>
+        <meta property="fb:app_id" content=""/>
+        <meta property="og:site_name" content=""/>
+        <meta property="og:description"
+              content=""/>
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
@@ -13,14 +24,33 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=322754294532011";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+        <main>
+            <div class="fb-like" data-href="https://www.facebook.com/fittrailua/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+
+            <h1>Спортивний маршрут «FitTrail» на ВДНГ</h1>
+            <img src="img/schema.jpg" alt="Схема маршруту" class="schema">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gh-tpgmwHcw" frameborder="0" allowfullscreen></iframe>
+
+            <div class="fb-like" data-href="https://www.facebook.com/fittrailua/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+        </main>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
