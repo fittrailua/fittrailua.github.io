@@ -12,6 +12,10 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /**
  * Remove default margin.
  */

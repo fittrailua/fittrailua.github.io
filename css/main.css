@@ -1,84 +1,9 @@
-/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
 html {
     background-color: #0b8043;
     color: #fff;
     font-size: 1em;
     line-height: 1.4;
 }
-
-h1 {
-    color: #fff;
-    text-align: center;
-}
-
-main {
-    margin: 0 auto;
-    padding: 20px;
-    max-width: 1024px;
-}
-
-.social-buttons {
-    float: right;
-}
-
-.schema {
-    width: 550px;
-    height: ;
-}
-
-.schema-notes {
-    float: right;
-    width: 45%;
-    line-height: 36px;
-    font-size: 26px;
-}
-
-.schema-notes>div {
-    margin-bottom: 20px;
-}
-
-.logo {
-    background: url('/img/logo.png') 0 0 no-repeat;
-    background-size: contain;
-    width: 127px;
-    height: 110px;
-}
-
-.team {
-    text-align: right;
-}
-
-.team .team-member {
-    display: inline-block;
-    margin-left: 30px;
-}
-
-.team .sign {
-    margin: 20px 0;
-}
-
-.team .avatar {
-    display: inline;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    -o-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-}
-
 
 /*
  * Remove text-shadow in selection highlight:
@@ -144,6 +69,20 @@ textarea {
     resize: vertical;
 }
 
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
@@ -155,194 +94,137 @@ textarea {
     padding: 0.2em 0;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden {
-    display: none !important;
+h1 {
+    color: #fff;
+    text-align: center;
 }
 
-/*
- * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- */
+main {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1024px;
+}
 
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
+.social-buttons {
+    float: right;
+}
+
+.schema {
+    width: 550px;
+    height: ;
+}
+
+.schema-notes {
+    float: right;
+    width: 45%;
+    line-height: 36px;
+    font-size: 26px;
+}
+
+.schema-notes>div {
+    margin-bottom: 20px;
+}
+
+.logo {
+    background: url('/img/logo.png') 0 0 no-repeat;
+    background-size: contain;
+    width: 127px;
+    height: 110px;
+}
+
+.team {
+    text-align: right;
+}
+
+.team .team-member {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.team .sign {
+    margin: 20px 0;
+}
+
+.team .avatar {
+    display: inline;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+.donation-form {
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.donation-input-wrapper {
+    position: relative;
+    padding: 15px 0 0 0;
+}
+
+.donation-label {
+    display: block;
+    padding: 0 0 3px 0;
+    color: #eee;
+    font-size: 20px;
+}
+
+.donation-label.asterisk:after {
+    content: ' *';
+    color: #ee1111;
+    font-size: 24px;
+    line-height: 0;
+}
+
+.donation-currency {
     position: absolute;
-    width: 1px;
+    right: 10px;
+    bottom: 6px;
+    color: #333;
 }
 
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+.donation-input {
+    display: block;
+    padding: 4px 12px;
+    color: #222;
+    width: 100%;
+    font-size: 18px;
+    line-height: 26px;
+    border: 1px solid #999;
+    transition: border-color 0.4s;
+    -webkit-transition: border-color 0.4s;
+    -moz-transition: border-color 0.4s;
+    -o-transition: border-color 0.4s;
 }
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
+.donation-input:focus {
+    border-color: #666;
 }
 
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+.donation-input:focus,
+.donation-submit:focus {
+    outline: none;
 }
 
-.clearfix:after {
-    clear: both;
+.donation-submit {
+    background-color: #ffee00;
+    color: #666;
+    font-size: 22px;
+    border: 1px solid #aaa;
+    width: 200px;
+    line-height: 40px;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-    *,
-    *:before,
-    *:after,
-    *:first-letter,
-    *:first-line {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+.donation-submit:hover {
+    background-color: #eedd00;
 }

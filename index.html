@@ -93,12 +93,25 @@
             <span id="totalDonations"></span>
             (<span id="numberOfDonators"></span>)
 
-            <form id="donationForm" action="" method="POST" target="noTarget">
-                Готовий(а) підтримати на
-                <input id="amount" required type="number" min="0" value="500" placeholder="amount" name="amount">₴(грн)<br>
-                <input id="name" required placeholder="Як вас звати?" name="name">
-                <input id="email" required type="email" placeholder="Введіть ваш email" name="email">
-                <button id="formSubmit" type="submit">Відправити</button>
+            <form id="donationForm" class="donation-form" action="" method="POST" target="noTarget">
+                <div class="donation-input-wrapper">
+                    <label for="amount" class="donation-label asterisk">Готовий(а) підтримати на</label>
+                    <input id="amount" class="donation-input" required type="number" min="0" value="500" autocomplete="off" name="amount">
+                    <div class="donation-currency">₴ (грн)</div>
+                </div>
+
+                <div class="donation-input-wrapper">
+                    <label for="name" class="donation-label asterisk">Ім'я</label>
+                    <input id="name" class="donation-input" required name="name">
+                </div>
+                <div class="donation-input-wrapper">
+                    <label for="email" class="donation-label asterisk">Email</label>
+                    <input id="email" class="donation-input" required type="email" name="email">
+                </div>
+
+                <div class="donation-input-wrapper">
+                    <button id="formSubmit" class="donation-submit" type="submit">Долучитися</button>
+                </div>
             </form>
 
             <p id="donationFormFeedback"></p>
