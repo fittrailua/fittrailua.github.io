@@ -28,10 +28,57 @@ main {
     max-width: 1024px;
 }
 
+.social-buttons {
+    float: right;
+}
+
 .schema {
     width: 550px;
     height: ;
 }
+
+.schema-notes {
+    float: right;
+    width: 45%;
+    line-height: 36px;
+    font-size: 26px;
+}
+
+.schema-notes>div {
+    margin-bottom: 20px;
+}
+
+.logo {
+    background: url('/img/logo.png') 0 0 no-repeat;
+    background-size: contain;
+    width: 127px;
+    height: 110px;
+}
+
+.team {
+    text-align: right;
+}
+
+.team .team-member {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.team .sign {
+    margin: 20px 0;
+}
+
+.team .avatar {
+    display: inline;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
 
 /*
  * Remove text-shadow in selection highlight:
