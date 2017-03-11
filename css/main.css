@@ -11,7 +11,7 @@
    ========================================================================== */
 
 html {
-    background-color: #018954;
+    background-color: #0b8043;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -23,6 +23,7 @@ h1 {
 
 main {
     margin: 0 auto;
+    padding: 20px;
     max-width: 1024px;
 }
 

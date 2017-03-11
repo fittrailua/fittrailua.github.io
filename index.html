@@ -50,12 +50,23 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/gh-tpgmwHcw" frameborder="0" allowfullscreen></iframe>
 
             <div class="fb-like" data-href="https://www.facebook.com/fittrailua/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+
+            <form id="donationForm" action="" method="POST" target="noTarget">
+                <input id="name" required placeholder="name" name="name">
+                <input id="email" required type="email" placeholder="email" name="email">
+                <input id="amount" required type="number" min="0" value="500" placeholder="amount" name="amount">
+                <button id="formSubmit" type="submit">Відправити</button>
+            </form>
+
+            <iframe src="#" id="noTarget" name="noTarget" style="visibility: hidden; width: 0; height: 0;"></iframe>
+            <p id="donationFormFeedback"></p>
         </main>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/form.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
