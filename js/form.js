@@ -5,19 +5,27 @@ $('#donationForm').one('submit', function(event) {
     var $email = $('#email');
     var $amount = $('#amount');
 
+    var name = $name.val();
+    var email = $email.val();
+    var amount = $amount.val();
+
     var nameGoogleID = "entry.1535784345";
     var emailGoogleID = "entry.815196922";
     var amountGoogleID = "entry.238879755";
 
     var submitURL = (
         'https://docs.google.com/forms/d/e/1FAIpQLSfhxbhsTJLBrujNWb_fi8GWVm_rTppNr4nGTams5XNmTOw2Tg/formResponse?' +
-        nameGoogleID + "=" + encodeURIComponent($name.val()) + "&" +
-        emailGoogleID + "=" + encodeURIComponent($email.val()) + "&" +
-        amountGoogleID + "=" + encodeURIComponent($amount.val()) +
+        nameGoogleID + "=" + encodeURIComponent(name) + "&" +
+        emailGoogleID + "=" + encodeURIComponent(email) + "&" +
+        amountGoogleID + "=" + encodeURIComponent(amount) +
         '&submit=Submit'
     );
     $form.attr('action', submitURL);
     $form.trigger('reset');
     $feedback.text('Дякуємо!');
+
+    setTimeout(function() {
+        window.totalDonations.add(amount);
+    }, 0);
 });
 
