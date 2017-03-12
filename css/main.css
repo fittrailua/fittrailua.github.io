@@ -1,8 +1,44 @@
+@font-face {
+    font-family: Helvetica;
+    src: url('/fonts/helvetica.eot') format('embedded-opentype'),
+         url('/fonts/helvetica.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: SegoeUI;
+    src: url('/fonts/segoeui.eot') format('embedded-opentype'),
+         url('/fonts/segoeui.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: SegoeUI;
+    src: url('/fonts/segoeuib.eot') format('embedded-opentype'),
+         url('/fonts/segoeuib.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 600;
+}
+
 html {
     background-color: #0b8043;
     color: #fff;
     font-size: 1em;
     line-height: 1.4;
+    font-family: 'SegoeUI', 'Helvetica', sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+section {
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+section:first-child {
+    margin-top: 0;
 }
 
 /*
@@ -96,12 +132,27 @@ input[type="number"] {
 
 h1 {
     color: #fff;
-    text-align: center;
+    font-size: 74px;
+    text-align: right;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+#path {
+    position: absolute;
+    top: 230px;
+    left: 330px;
+    background: url('/img/animation-path.png') 0 0 no-repeat;
+    background-size: contain;
+    width: 630px;
+    height: 31px;
 }
 
 main {
     margin: 0 auto;
-    padding: 20px;
+    background: url('/img/runner.png') 90px 143px no-repeat;
+    padding: 20px 20px 80px;
     max-width: 1024px;
 }
 
@@ -109,31 +160,104 @@ main {
     float: right;
 }
 
+.logo {
+    background: url('/img/logo.png') 0 0 no-repeat;
+    background-size: contain;
+    width: 60px;
+    height: 52px;
+    float: left;
+}
+
+.description {
+    text-align: right;
+    font-size: 26px;
+    max-width: 555px;
+    float: right;
+}
+
 .schema {
+    background: url('/img/schema.jpg') 0 0 no-repeat;
+    background-size: contain;
     width: 550px;
-    height: ;
+    height: 395px;
+    float: left;
 }
 
 .schema-notes {
     float: right;
-    width: 45%;
+    width: 43%;
+    margin-top: 50px;
     line-height: 36px;
-    font-size: 26px;
+    font-size: 24px;
 }
 
 .schema-notes>div {
     margin-bottom: 20px;
 }
 
-.logo {
-    background: url('/img/logo.png') 0 0 no-repeat;
-    background-size: contain;
-    width: 127px;
-    height: 110px;
+.stand-notes {
+    float: left;
+    font-size: 24px;
+    width: 50%;
+    margin-top: 50px;
+}
+
+.sketche-link {
+    text-align: right;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.stand-notes>div {
+    margin-bottom: 15px;
+}
+
+.video-notes {
+    float: right;
+    width: 55%;
+    font-size: 24px;
+}
+
+.video-notes>div {
+    margin-bottom: 10px;
+}
+
+.donators-info {
+    text-align: center;
+    font-size: 36px;
+    margin: 30px 0;
+}
+
+.budget-link {
+    color: #fff;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 auto 40px;
+    font-size: 30px;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.budget-link:after {
+    content: '';
+}
+
+.budget-link:hover {
+    opacity: 1;
+}
+
+.donators-info b,
+.budget-link b {
+    color: #ffee00;
 }
 
 .team {
     text-align: right;
+    margin-bottom: 100px;
 }
 
 .team .team-member {
@@ -211,10 +335,11 @@ main {
     outline: none;
 }
 
-.donation-submit {
+.donation-submit, .button {
     background-color: #ffee00;
     color: #666;
     font-size: 22px;
+    text-decoration: none;
     border: 1px solid #aaa;
     width: 200px;
     line-height: 40px;
@@ -225,6 +350,24 @@ main {
     -o-transition: background-color 0.2s;
 }
 
-.donation-submit:hover {
+.button.small {
+    float: right;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 26px;
+    height: 28px;
+    width: 122px;
+    padding: 0;
+    margin: 0 0 0 3px;
+    text-align: center;
+    border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.donation-submit:hover,
+.button:hover {
     background-color: #eedd00;
 }

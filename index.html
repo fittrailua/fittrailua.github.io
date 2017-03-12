@@ -42,56 +42,70 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
 
+
+        <div id="path"></div>
         <main>
-            <div class="logo"></div>
+            <section>
+                <div class="logo"></div>
+                <div class="social-buttons">
+                    <div class="fb-like" data-href="https://www.facebook.com/fittrailua/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+                    <a href="mailto:fittrailua@gmail.com" class="button small">Написати нам</a>
+                </div>
+            </section>
 
-            <div class="social-buttons">
-                <div class="fb-like" data-href="https://www.facebook.com/fittrailua/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
-                <a href="mailto:fittrailua@gmail.com">Написати нам</a>
-            </div>
+            <section>
+                <h1>FitTrail – це</h1>
+                <div class="description">рекреаційно-оздоровчий маршрут для бігу чи прогулянок, облаштований спортивним та інформаційним обладнанням.</div>
+            </section>
 
-            <h1>FitTrail – це</h1>
-
-            <div>рекреаційно-оздоровчий маршрут для бігу чи прогулянок, облаштований спортивним та інформаційним обладнанням.</div>
-
-            <img src="img/schema.jpg" alt="Схема маршруту" class="schema">
-
-            <div class="schema-notes">
-                <div>- програма тренування розроблена за участю професійного тренера</div>
-                <div>- для будь-якого рівня підготовки</div>
-                <div>- ~3 км у лісопаркові зоні на ВДНГ</div>
-            </div>
+            <section>
+                <div class="schema"></div>
+                <div class="schema-notes">
+                    <div>- програма тренування розроблена за участю професійного тренера</div>
+                    <div>- для будь-якого рівня підготовки</div>
+                    <div>- ~3 км у лісопаркові зоні на ВДНГ</div>
+                </div>
+            </section>
 
             <div class="stands-slider">
 
             </div>
 
-            <a href="">Креслення</a>
 
-            <div>
-                <div>15 послідовних станцій з тренажерами</div>
-                <div>вправи на гнучкість, статику та координацію, аеробні та силові</div>
-                <div>стенди до кожної вправи</div>
+
+            <section>
+                <div class="stand-notes">
+                    <div>15 послідовних станцій з тренажерами</div>
+                    <div>вправи на гнучкість, статику та координацію, аеробні та силові</div>
+                    <div>стенди до кожної вправи</div>
+                </div>
+                <img src="/img/stands-placeholder.jpg" / style="float:right;">
+            </section>
+
+            <a class="sketche-link">Креслення</a>
+
+            <section>
+                <iframe width="400" height="225" src="https://www.youtube.com/embed/gh-tpgmwHcw?cc_load_policy=1&showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+                <div class="video-notes">
+                    <div>покращує спортивно-оздоровчу інфраструктуру міста</div>
+                    <div>популяризує спорт і здоровий спосіб життя</div>
+                    <div>залучає жителів та гостей району до активного дозвілля</div>
+                    <div>збільшує час, проведений на природі, зміцнює здоров'я та пом'якшує стрес</div>
+                </div>
+            </section>
+
+            <section>
+                <div class="brochure-slider">
+                    <img src="/img/brochure-placeholder.jpg">
+                </div>
+            </section>
+
+            <div class="donators-info">
+                <b><span id="numberOfDonators"></span> людей</b> підтримують проект на <b><span id="totalDonations"></span> ₴ (грн)</b>
             </div>
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/gh-tpgmwHcw?cc_load_policy=1&showinfo=0" frameborder="0" allowfullscreen></iframe>
-
-            <div>
-                <div>Покращує спортивно-оздоровчу інфраструктуру міста</div>
-                <div>Популяризує спорт і здоровий спосіб життя</div>
-                <div>Залучає жителів та гостей району до активного дозвілля</div>
-                <div>Збільшує час, проведений на природі, зміцнює здоров'я та пом'якшує стрес</div>
-            </div>
-
-            <div class="brochure-slider">
-
-            </div>
-
-            <a href="">Бюджет</a>
-
-            Всього:
-            <span id="totalDonations"></span>
-            (<span id="numberOfDonators"></span>)
+            <a class="budget-link">Бюджет <b>241 000 ₴ (грн)</b></a>
 
             <form id="donationForm" class="donation-form" action="" method="POST" target="noTarget">
                 <div class="donation-input-wrapper">
@@ -105,7 +119,7 @@
                 </div>
 
                 <div class="donation-input-wrapper">
-                    <label for="otherContact" class="donation-label">Інші контакти (тел./fb)</label>
+                    <label for="otherContact" class="donation-label">Інші контакти (номер тел./facebook/інше)</label>
                     <input id="otherContact" class="donation-input" name="otherContact">
                 </div>
 
@@ -123,9 +137,6 @@
             <p id="donationFormFeedback"></p>
 
             <iframe src="#" id="noTarget" name="noTarget" style="visibility: hidden; width: 0; height: 0;"></iframe>
-
-            <div class="fb-like" data-href="https://www.facebook.com/fittrailua/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
-            <a href="mailto:fittrailua@gmail.com">Написати нам</a>
 
             <div class="team">
                 <div class="sign">З любов'ю, команда "FitTrail"</div>
@@ -155,6 +166,8 @@
                     <div class="role">автор програми</div>
                 </div>
             </div>
+
+            <div class="fb-like" data-href="https://www.facebook.com/fittrailua/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
         </main>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
