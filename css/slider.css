@@ -23,6 +23,7 @@
     background-size: contain;
     width: 50px;
     height: 45px;
+    cursor: pointer;
 }
 
 .slides {
