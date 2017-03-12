@@ -283,6 +283,30 @@ main {
     -moz-border-radius: 50%;
 }
 
+#donationFormFeedback {
+    height: 0;
+    opacity: 0;
+    text-align: center;
+    font-size: 28px;
+    width: 580px;
+    margin: 100px auto;
+    transition: opacity 0.7s;
+    -webkit-transition: opacity 0.7s;
+    -moz-transition: opacity 0.7s;
+    -o-transition: opacity 0.7s;
+}
+
+#donationFormFeedback b {
+    color: #ffee00;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#donationFormFeedback.show {
+    height: auto;
+    opacity: 1;
+}
+
 .donation-form {
     display: block;
     width: 500px;

@@ -25,8 +25,8 @@ $('#donationForm').one('submit', function(event) {
         '&submit=Submit'
     );
     $form.attr('action', submitURL);
-    $form.trigger('reset');
-    $feedback.text('Дякуємо!');
+    $form.hide();
+    $feedback.addClass('show');
 
     setTimeout(function() {
         window.totalDonations.add(amount);
