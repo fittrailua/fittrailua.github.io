@@ -247,6 +247,13 @@ main {
 
 .budget-link:after {
     content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url('../img/iinfo.svg') 0 0 no-repeat;
+    background-size: contain;
+    vertical-align: bottom;
+    margin-left: 25px;
 }
 
 .budget-link:hover {
