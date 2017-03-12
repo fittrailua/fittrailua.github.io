@@ -1,0 +1,56 @@
+.modal {
+    display: none;
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    padding-top: 40px;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 90;
+    -moz-transition: background-color 0.3s linear;
+    -o-transition: background-color 0.3s linear;
+    -webkit-transition: background-color 0.3s linear;
+    transition: background-color 0.3s linear;
+}
+
+.modal-content {
+    position: relative;
+    width: calc(100% - 100px);
+    max-width: 95%;
+    background: #fff;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    -moz-box-shadow: rgba(0,0,0,0.4) 0 0 10px;
+    -webkit-box-shadow: rgba(0,0,0,0.4) 0 0 10px;
+    box-shadow: rgba(0,0,0,0.4) 0 0 10px;
+    -moz-transition: margin-top 0.6s cubic-bezier(0.035, 0.66, 0.11, 1);
+    -o-transition: margin-top 0.6s cubic-bezier(0.035, 0.66, 0.11, 1);
+    -webkit-transition: margin-top 0.6s cubic-bezier(0.035, 0.66, 0.11, 1);
+    transition: margin-top 0.6s cubic-bezier(0.035, 0.66, 0.11, 1);
+}
+
+.modal-close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 20px;
+    color: #999;
+    cursor: pointer;
+}
+
+.modal-close:before {
+    content: "✕";
+}
+
+#schemaModal .modal-content {
+    max-width: 850px;
+}
+
+.modal-schema-img {
+    max-width: 100%;
+}
