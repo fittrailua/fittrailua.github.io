@@ -1,15 +1,4 @@
 $(function() {
-    // var path = document.getElementById("path");
-    // var dashOffset = parseInt($("#path").css("stroke-dashoffset"), 10);
-
-    // $(window).scroll(function() {
-    //     var percentageComplete = (($(window).scrollTop() / ($("html").height() - $(window).height())) * 100);
-    //     var offsetUnit = (percentageComplete * (dashOffset / 100));
-    //     $("#path").css("stroke-dashoffset", dashOffset - offsetUnit);
-    // });
-
-
-
     var path = document.getElementById("path");
     var length = path.getTotalLength();
 
@@ -17,9 +6,16 @@ $(function() {
     path.style.strokeDashoffset = length;
 
     function updatePath() {
-        var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+        var offset = document.body.scrollTop + document.documentElement.scrollTop;
+        var scrollPercent;
+        var slowDownOffset = 800;
+        if (offset < slowDownOffset) {
+            var k = 800 + (1500 - 800) * offset / slowDownOffset;
+            scrollPercent = offset / k;
+        } else
+            scrollPercent = offset / 1500;
 
-        var draw = length * scrollpercent;
+        var draw = length * scrollPercent;
         path.style.strokeDashoffset = length - draw;
     }
 
