@@ -148,7 +148,7 @@ h1 {
     position: relative;
 }
 
-#path {
+/*#path {
     position: absolute;
     top: 130px;
     left: 100px;
@@ -157,7 +157,7 @@ h1 {
     width: 630px;
     height: 31px;
 }
-
+*/
 .section-container {
     max-width: 1024px;
     margin: 0 auto;

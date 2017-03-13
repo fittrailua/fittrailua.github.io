@@ -41,7 +41,6 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
 
-
         <section class="head">
             <div class="section-container">
                 <div class="logo"></div>
@@ -56,10 +55,22 @@
             <div class="section-container">
                 <h1>FitTrail – це</h1>
                 <div class="description">рекреаційно-оздоровчий маршрут для бігу чи прогулянок, облаштований спортивним та інформаційним обладнанням.</div>
-                <div id="path"></div>
                 <div id="runner"></div>
             </div>
         </section>
+
+        <svg style="position: absolute;
+                    top: 180px;
+                    left: 129px;
+                    opacity: 0.5;"
+             height="500" width="1200">
+          <path id="path" stroke="#ffffff" stroke-width="7" stroke-dasharray="30" fill="none"
+                d="M100 100
+                   L800 100
+                   C1000 100 1000 400 800 400
+                   L100 400
+                   " />
+        </svg>
 
         <section>
             <div class="section-container">
@@ -219,6 +230,7 @@
         <script src="js/form.js"></script>
         <script src="js/modals.js"></script>
         <script src="js/slider.js"></script>
+        <script src="js/line.js"></script>
 
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
