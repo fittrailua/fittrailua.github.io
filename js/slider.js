@@ -1,52 +1,47 @@
 $(function() {
-    var SLIDE_WIDTH = 400;
+    var currentSlide = 0;
 
     var findSlider = function(event) {
         return $(event.target).closest('.slider');
     }
 
-    var isFirstSlide = function($slider, marginLeft) {
-        return marginLeft == 0;
+    var isFirstSlide = function() {
+        return currentSlide == 0;
     }
 
-    var isLastSlide = function($slider, marginLeft) {
-        return marginLeft == lastSlideMarginLeft($slider);
+    var isLastSlide = function($slider) {
+        return currentSlide == lastSlide($slider);
     }
 
-    var lastSlideMarginLeft = function($slider) {
-        var numberOfSlides = $slider.find('.slide').length;
-        return -1 * SLIDE_WIDTH * (numberOfSlides - 1);
+    var lastSlide = function($slider) {
+        return $slider.find('.slide').length - 1;
+    }
+
+    var slideWidth = function($slider) {
+        return $slider.width();
     }
 
     $('.slider-prev').on('click', function(event) {
         var $slider = findSlider(event);
         var $slideWindow = $slider.find('.slide-window');
 
-        var marginLeftPx = $slideWindow.css('marginLeft');
-        var marginLeft = parseInt(marginLeftPx, 10);
-
-        if (marginLeft % SLIDE_WIDTH != 0)
-            return;
-
-        if (isFirstSlide($slider, marginLeft))
-            $slideWindow.css({ marginLeft: lastSlideMarginLeft($slider) });
+        if (isFirstSlide())
+            currentSlide = lastSlide($slider);
         else
-            $slideWindow.css({ marginLeft: marginLeft + SLIDE_WIDTH });
+            currentSlide -= 1;
+
+        $slideWindow.css({ marginLeft: -1 * currentSlide * slideWidth($slider) });
     });
 
     $('.slider-next').on('click', function(event) {
         var $slider = findSlider(event);
         var $slideWindow = $slider.find('.slide-window');
 
-        var marginLeftPx = $slideWindow.css('marginLeft');
-        var marginLeft = parseInt(marginLeftPx, 10);
-
-        if (marginLeft % SLIDE_WIDTH != 0)
-            return;
-
-        if (isLastSlide($slider, marginLeft))
-            $slideWindow.css({ marginLeft: '0px' });
+        if (isLastSlide($slider))
+            currentSlide = 0;
         else
-            $slideWindow.css({ marginLeft: marginLeft - SLIDE_WIDTH + 'px' });
+            currentSlide += 1;
+
+        $slideWindow.css({ marginLeft: -1 * currentSlide * slideWidth($slider) });
     });
 });
