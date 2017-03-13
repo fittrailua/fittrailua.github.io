@@ -123,11 +123,15 @@
 
 
         <div class="section-container">
+            <a href="img/budget.pdf" class="budget-link" target="_blank">Бюджет &nbsp;&nbsp;<b>241 000 ₴</b></a>
+
             <div class="donators-info">
-                <b><span id="numberOfDonators"></span></b> підтримують проект на <b><span id="totalDonations"></span> ₴ (грн)</b>
+                <b><span id="numberOfDonators"></span></b> підтримують проект на <b><span id="totalDonations"></span> ₴</b>
             </div>
 
-            <a href="img/budget.pdf" class="budget-link" target="_blank">Бюджет &nbsp;&nbsp;<b>241 000 ₴</b></a>
+            <div class="form-notes">
+                На яку суму ви зможете нас підтримати під час збору коштів?
+            </div>
 
             <form id="donationForm" class="donation-form" action="" method="POST" target="noTarget">
                 <div class="donation-input-wrapper">
@@ -145,7 +149,7 @@
                 </div>
 
                 <div class="donation-input-wrapper">
-                    <input id="amount" class="donation-input" required type="number" min="0" autocomplete="off" placeholder="Зможу підтримати на 500 (введіть суму)" name="amount">
+                    <input id="amount" class="donation-input" required type="number" min="0" autocomplete="off" placeholder="500 (зможу підтримати на введену суму)" name="amount">
                     <div class="donation-currency">₴ (грн)</div>
                     <div class="asterisk"></div>
                 </div>

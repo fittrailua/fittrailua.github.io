@@ -298,6 +298,7 @@ section.footer .section-container {
 
 .brochure-link:before {
     background: url('../img/ibook.svg') 0 0 no-repeat;
+    top: -105px;
 }
 
 .sketches-link:before {
@@ -363,6 +364,14 @@ section.footer .section-container {
 
 .donators-info b {
     color: #ffee00;
+    /*font-weight: 500;*/
+    letter-spacing: 1px;
+}
+
+.form-notes {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
 }
 
 .team {
