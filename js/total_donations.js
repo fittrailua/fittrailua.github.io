@@ -2,7 +2,7 @@ $(function() {
   var number = 0;
   var total = 0;
 
-  var addToTotalDonations = function (amount) {
+  var addToTotalDonations = function(amount) {
     number += 1;
     total += parseInt(amount, 10);
 
@@ -13,8 +13,20 @@ $(function() {
     updateUI();
   }
 
-  var updateUI = function () {
-    $('#numberOfDonators').text(number);
+  var humanize = function(number) {
+    var rest = number % 10;
+    if (number >= 10 && number <= 20)
+      return number + ' людей'
+    else if (rest == 1)
+      return number + ' людина'
+    else if (rest == 2 || rest == 3 || rest == 4)
+      return number + ' людини'
+    else
+      return number + ' людей'
+  }
+
+  var updateUI = function() {
+    $('#numberOfDonators').text(humanize(number));
     $('#totalDonations').text(total);
   }
 
