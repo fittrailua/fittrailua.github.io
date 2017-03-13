@@ -7,15 +7,27 @@
 
 @font-face {
     font-family: SegoeUI;
-    src: url('/fonts/segoeui.eot') format('embedded-opentype'),
-         url('/fonts/segoeui.ttf') format('truetype');
+    src: url('/fonts/SegoeUIRegular.eot') format('embedded-opentype'),
+         url('/fonts/SegoeUIRegular.woff') format('woff'),
+         url('/fonts/SegoeUIRegular.ttf') format('truetype');
     font-style: normal;
+    font-weight: 400;
 }
 
 @font-face {
     font-family: SegoeUI;
-    src: url('/fonts/segoeuib.eot') format('embedded-opentype'),
-         url('/fonts/segoeuib.ttf') format('truetype');
+    src: url('/fonts/SegoeUILight.eot') format('embedded-opentype'),
+         url('/fonts/SegoeUILight.woff') format('woff'),
+         url('/fonts/SegoeUILight.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: SegoeUI;
+    src: url('/fonts/SegoeUIBold.eot') format('embedded-opentype'),
+         url('/fonts/SegoeUIBold.woff') format('woff'),
+         url('/fonts/SegoeUIBold.ttf') format('truetype');
     font-style: normal;
     font-weight: 600;
 }
@@ -29,16 +41,11 @@ html {
 }
 
 body {
-    position: relative;
+    /*position: relative;*/
 }
 
 section {
     overflow: hidden;
-    margin-top: 50px;
-}
-
-section:first-child {
-    margin-top: 0;
 }
 
 /*
@@ -136,13 +143,13 @@ h1 {
     text-align: right;
     letter-spacing: 3px;
     font-weight: 600;
-    margin: 10px 0;
+    margin: 10px 0 45px;
 }
 
 #path {
     position: absolute;
-    top: 230px;
-    left: 330px;
+    top: 130px;
+    left: 100px;
     background: url('../img/animation-path.png') 0 0 no-repeat;
     background-size: contain;
     width: 630px;
@@ -150,21 +157,54 @@ h1 {
 }
 
 main {
-    margin: 0 auto;
-    background: url('../img/runner.png') 90px 143px no-repeat;
-    padding: 20px 20px 80px;
+    padding-bottom: 80px;
+}
+
+.section-container {
     max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+section.head {
+    padding: 10px 0;
+}
+
+section.head .section-container {
+    margin-top: 0;
+}
+
+section.hero {
+    background-color: #08502b;
+    padding: 20px 0 60px;
+}
+
+section.hero .section-container {
+    overflow: hidden;
+    position: relative;
+}
+
+#runner {
+    position: absolute;
+    background: url('../img/runner.png') 0 0 no-repeat;
+    background-size: contain;
+    width: 124px;
+    height: 193px;
+    top: 60px;
+    left: 20px;
 }
 
 .social-buttons {
     float: right;
+    margin-top: 13px;
 }
 
 .logo {
     background: url('../img/logo.png') 0 0 no-repeat;
     background-size: contain;
     width: 60px;
-    height: 52px;
+    height: 53px;
     float: left;
 }
 
@@ -210,6 +250,8 @@ main {
 .video-notes>div {
     margin-bottom: 20px;
     padding-left: 25px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
 }
 
 .schema-notes>div:before,
@@ -226,10 +268,14 @@ main {
     margin-top: 50px;
 }
 
+.info-cta {
+    text-align: center;
+    margin-top: 50px;
+}
+
 .brochure-link,
 .sketches-link {
-    text-align: right;
-    display: block;
+    display: inline-block;
     color: #fff;
     text-decoration: none;
     font-size: 22px;
@@ -247,6 +293,10 @@ main {
     background-size: contain;
     vertical-align: bottom;
     margin-left: 15px;
+}
+
+.brochure-link {
+    margin-right: 0;
 }
 
 .video-notes {
@@ -268,7 +318,6 @@ main {
     text-decoration: none;
     margin: 0 auto 40px;
     font-size: 30px;
-    opacity: 0.9;
     cursor: pointer;
 }
 
@@ -284,7 +333,7 @@ main {
 }
 
 .budget-link:hover {
-    opacity: 1;
+    /*opacity: 1;*/
 }
 
 .donators-info b,
@@ -349,7 +398,7 @@ main {
 
 .donation-form {
     display: block;
-    width: 500px;
+    width: 600px;
     margin: 0 auto;
 }
 
@@ -358,43 +407,48 @@ main {
     padding: 15px 0 0 0;
 }
 
-.donation-label {
-    display: block;
-    padding: 0 0 3px 0;
-    color: #eee;
-    font-size: 20px;
+.asterisk {
+    position: absolute;
+    right: 10px;
+    bottom: 27px;
 }
 
-.donation-label.asterisk:after {
+.asterisk:after {
     content: ' *';
     color: #ee1111;
-    font-size: 24px;
+    font-size: 28px;
     line-height: 0;
 }
 
 .donation-currency {
     position: absolute;
-    right: 10px;
-    bottom: 6px;
+    right: 15px;
+    bottom: 19px;
     color: #333;
 }
 
 .donation-input {
     display: block;
-    padding: 4px 12px;
+    padding: 4px 30px;
     color: #222;
     width: 100%;
-    font-size: 18px;
-    line-height: 26px;
-    border: 1px solid #999;
+    font-size: 20px;
+    line-height: 65px;
+    height: 65px;
+    border: 1px solid #fff;
     transition: border-color 0.4s;
     -webkit-transition: border-color 0.4s;
     -moz-transition: border-color 0.4s;
     -o-transition: border-color 0.4s;
+    border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
 }
 
 .donation-input:focus {
-    border-color: #666;
+    border-color: #e0d73c;
 }
 
 .donation-input:focus,
@@ -403,18 +457,45 @@ main {
 }
 
 .donation-submit, .button {
-    background-color: #ffee00;
-    color: #666;
-    font-size: 22px;
+    background: #dfb828;
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 1.5px;
     text-decoration: none;
-    border: 1px solid #aaa;
-    width: 200px;
-    line-height: 40px;
-    margin-top: 10px;
+    border: none;
+    width: 100%;
+    line-height: 60px;
+    height: 65px;
     transition: background-color 0.2s;
     -webkit-transition: background-color 0.2s;
     -moz-transition: background-color 0.2s;
     -o-transition: background-color 0.2s;
+    border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+::-webkit-input-placeholder {
+    color:    #0b8043;
+    opacity:  0.6;
+    font-weight: 300;
+}
+:-moz-placeholder {
+    color:    #0b8043;
+    opacity:  0.6;
+    font-weight: 300;
+}
+::-moz-placeholder {
+    color:    #0b8043;
+    opacity:  0.6;
+    font-weight: 300;
+}
+:-ms-input-placeholder {
+    color:    #0b8043;
+    opacity:  0.6;
+    font-weight: 300;
 }
 
 .button.small {
@@ -423,18 +504,28 @@ main {
     font-size: 16px;
     line-height: 26px;
     height: 28px;
-    width: 122px;
+    width: 130px;
     padding: 0;
     margin: 0 0 0 3px;
     text-align: center;
-    border-radius: 5px;
-    -o-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
+    background: #de9228;
+    background: -webkit-linear-gradient(#de9228, #b5741b);
+    background: -o-linear-gradient(#de9228, #b5741b);
+    background: -moz-linear-gradient(#de9228, #b5741b);
+    background: linear-gradient(#de9228, #b5741b);
 }
 
 .donation-submit:hover,
 .button:hover {
-    background-color: #eedd00;
+    background-color: #dfa528;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .logo {
+        background-image: url('../img/logo@2x.png');
+    }
+
+    #runner {
+        background-image: url('../img/runner@2x.png');
+    }
 }
