@@ -286,6 +286,15 @@ section.footer .section-container {
     padding: 10px;
     position: relative;
     width: 150px;
+    border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
 }
 
 .brochure-link:before {
@@ -313,6 +322,22 @@ section.footer .section-container {
     margin-right: 0;
 }
 
+.brochure-link:hover,
+.sketches-link:hover {
+    border-color: #ddf4e8;
+    color: #ddf4e8;
+}
+
+.brochure-link:hover:before {
+    background: url('../img/ibook-hover.svg') 0 0 no-repeat;
+    background-size: contain;
+}
+
+.sketches-link:hover:before {
+    background: url('../img/isketch-hover.svg') 0 0 no-repeat;
+    background-size: contain;
+}
+
 .video-notes {
     float: right;
     width: 55%;
@@ -333,13 +358,23 @@ section.footer .section-container {
     margin: 0 auto 40px;
     font-size: 30px;
     cursor: pointer;
-    width: 430px;
+    width: 440px;
     height: 84px;
     line-height: 84px;
     border: 3px solid #fff;
     z-index: 1;
     background: #0b8043;
     position: relative;
+    letter-spacing: 1px;
+    transition: background 0.1s;
+    -webkit-transition: background 0.1s;
+    -moz-transition: background 0.1s;
+    -o-transition: background 0.1s;
+    border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
 }
 
 .budget-link:after {
@@ -354,12 +389,18 @@ section.footer .section-container {
 }
 
 .budget-link:hover {
-    /*opacity: 1;*/
+    background: #ddf4e8;
+    color: #0b8043;
+    border-color: #ddf4e8;
+}
+
+.budget-link:hover:after {
+    background: url('../img/ibudget-hover.svg') 0 0 no-repeat;
+    background-size: contain;
 }
 
 .donators-info b {
     color: #ffee00;
-    /*font-weight: 500;*/
     letter-spacing: 1px;
 }
 
