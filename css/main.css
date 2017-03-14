@@ -291,10 +291,10 @@ section.footer .section-container {
     -ms-border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    transition: 0.2s;
-    -webkit-transition: 0.2s;
-    -moz-transition: 0.2s;
-    -o-transition: 0.2s;
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -o-transition: 0.1s;
 }
 
 .brochure-link:before {
@@ -325,7 +325,8 @@ section.footer .section-container {
 .brochure-link:hover,
 .sketches-link:hover {
     border-color: #ddf4e8;
-    color: #ddf4e8;
+    background: #ddf4e8;
+    color: #0b8043;
 }
 
 .brochure-link:hover:before {
