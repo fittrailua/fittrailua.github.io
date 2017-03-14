@@ -224,7 +224,7 @@ section.footer .section-container {
 }
 
 .schema {
-    background: url('../img/schema.jpg') 0 0 no-repeat;
+    background: url('../img/schema-preview.jpg') 0 0 no-repeat;
     background-size: contain;
     width: 510px;
     height: 366px;
@@ -646,6 +646,10 @@ section.footer .section-container {
 
     #runner {
         background-image: url('../img/runner@2x.png');
+    }
+
+    .schema {
+        background-image: url('../img/schema-preview@2x.jpg');
     }
 }
 
