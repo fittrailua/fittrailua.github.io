@@ -10,10 +10,10 @@ $(function() {
         var scrollPercent;
         var slowDownOffset = 800;
         if (offset < slowDownOffset) {
-            var k = 700 + (1500 - 700) * offset / slowDownOffset;
+            var k = 700 + (1590 - 700) * offset / slowDownOffset;
             scrollPercent = offset / k;
         } else
-            scrollPercent = offset / 1500;
+            scrollPercent = offset / 1590;
 
         scrollPercent = Math.min(scrollPercent, 1);
 

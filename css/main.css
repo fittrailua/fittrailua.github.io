@@ -428,6 +428,7 @@ section.footer .section-container {
     color: #ffee00;
     display: inline-block;
     margin-bottom: 20px;
+    font-weight: 400;
 }
 
 #donationFormFeedback.show {
@@ -440,6 +441,8 @@ section.footer .section-container {
     display: block;
     width: 600px;
     margin: 0 auto;
+    z-index: 1;
+    position: relative;
 }
 
 .donation-input-wrapper {
@@ -561,6 +564,30 @@ section.footer .section-container {
     background-color: #dfa528;
 }
 
+.path-svg-container,
+.path-svg-container-initial {
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.path-svg-container-initial {
+    display: none;
+}
+
+.path-svg,
+.path-svg-initial {
+    position: absolute;
+    top: 180px;
+    left: 0;
+    height: 2100px;
+    width: 1024px;
+}
+
+.path-svg-initial {
+    height: 500px;
+}
+
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .logo {
         background-image: url('../img/logo@2x.png');
@@ -568,5 +595,19 @@ section.footer .section-container {
 
     #runner {
         background-image: url('../img/runner@2x.png');
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .path-svg-container {
+        display: none;
+    }
+
+    .path-svg-container-initial {
+        display: block;
+    }
+
+    .section-container {
+        margin-top: 80px;
     }
 }
