@@ -201,6 +201,10 @@ section.footer .section-container {
     margin-top: 13px;
 }
 
+.social-buttons .fb-like .top {
+    float: right;
+}
+
 .logo {
     background: url('../img/logo.png') 0 0 no-repeat;
     background-size: contain;
