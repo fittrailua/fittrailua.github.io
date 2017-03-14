@@ -10,7 +10,9 @@ function hideModals() {
 
 $(function() {
     $('#schemaImage').on('click', function() {
-        showModal('schemaModal');
+        if ($(window).width() > 667) {
+            showModal('schemaModal');
+        }
     });
 
     $('.modal').on('click', function(event) {
