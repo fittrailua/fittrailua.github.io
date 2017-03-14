@@ -630,10 +630,6 @@ section.footer .section-container {
     position: relative;
 }
 
-.path-svg-container-initial {
-    display: none;
-}
-
 .path-svg,
 .path-svg-initial {
     position: absolute;
@@ -660,10 +656,6 @@ section.footer .section-container {
 @media only screen and (max-width: 980px) {
     .path-svg-container {
         display: none;
-    }
-
-    .path-svg-container-initial {
-        display: block;
     }
 
     .section-container {
