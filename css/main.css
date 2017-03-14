@@ -280,7 +280,7 @@ h2 {
 .schema-notes>div:before,
 .stand-notes>div:before,
 .video-notes>div:before {
-    content: '✔';
+    content: '+';
     color: #fff !important;
     margin: 0 10px 0 -30px;
 }
