@@ -15,6 +15,8 @@ $(function() {
         } else
             scrollPercent = offset / 1500;
 
+        scrollPercent = Math.min(scrollPercent, 1);
+
         var draw = Math.max(200, length * scrollPercent);
         path.style.strokeDashoffset = length - draw;
     }

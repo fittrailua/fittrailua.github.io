@@ -148,16 +148,6 @@ h1 {
     position: relative;
 }
 
-/*#path {
-    position: absolute;
-    top: 130px;
-    left: 100px;
-    background: url('../img/animation-path.png') 0 0 no-repeat;
-    background-size: contain;
-    width: 630px;
-    height: 31px;
-}
-*/
 .section-container {
     max-width: 1024px;
     margin: 0 auto;
