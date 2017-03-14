@@ -274,8 +274,8 @@ section.footer .section-container {
 .schema-notes>div:before,
 .stand-notes>div:before,
 .video-notes>div:before {
-    content: '+';
-    margin: 0 10px 0 -25px;
+    content: '✔';
+    margin: 0 10px 0 -30px;
 }
 
 .stand-notes {
