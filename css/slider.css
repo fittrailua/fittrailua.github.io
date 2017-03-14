@@ -2,6 +2,7 @@
     width: 400px;
     position: relative;
     margin-right: 45px;
+    float: right;
 }
 
 .slider-prev {
@@ -41,4 +42,39 @@
 .slide {
     float: left;
     width: 400px;
+}
+
+@media only screen and (max-width: 445px) {
+    .slide {
+        width: 240px;
+    }
+
+    .slider {
+        width: 240px;
+        float: none;
+        margin: 30px auto 0;
+    }
+}
+
+
+@media only screen and (min-width: 446px) and (max-width: 667px) {
+    .slide {
+        width: 300px;
+    }
+
+    .slider {
+        width: 300px;
+        float: none;
+        margin: 30px auto 0;
+    }
+}
+
+@media only screen and (min-width: 446px) and (max-width: 800px) {
+     .slide {
+        width: 300px;
+    }
+
+    .slider {
+        width: 300px;
+    }
 }
