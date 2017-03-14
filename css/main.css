@@ -280,7 +280,7 @@ h2 {
 .schema-notes>div:before,
 .stand-notes>div:before,
 .video-notes>div:before {
-    content: '+';
+    content: '✓';
     color: #fff !important;
     margin: 0 10px 0 -30px;
 }
@@ -820,6 +820,10 @@ h2 {
         width: 100%;
         height: 240px;
         float: none;
+    }
+
+    .stand-notes {
+        margin-top: 30px;
     }
 
     .schema-notes,
