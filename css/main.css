@@ -314,12 +314,12 @@ section.footer .section-container {
 }
 
 .brochure-link:before {
-    background: url('../img/ibook.svg') 0 0 no-repeat;
+    background: url('../img/ibook.svg') center top no-repeat;
     top: -105px;
 }
 
 .sketches-link:before {
-    background: url('../img/isketch.svg') 0 0 no-repeat;
+    background: url('../img/isketch.svg') center top no-repeat;
 }
 
 .brochure-link:before,
@@ -328,7 +328,7 @@ section.footer .section-container {
     display: block;
     width: 80px;
     height: 80px;
-    background-size: contain;
+    background-size: 80px;
     position: absolute;
     top: -100px;
     left: calc(50% - 40px);
@@ -346,13 +346,11 @@ section.footer .section-container {
 }
 
 .brochure-link:hover:before {
-    background: url('../img/ibook-hover.svg') 0 0 no-repeat;
-    background-size: contain;
+    background-position: center bottom;
 }
 
 .sketches-link:hover:before {
-    background: url('../img/isketch-hover.svg') 0 0 no-repeat;
-    background-size: contain;
+    background-position: center bottom;
 }
 
 .video-notes {
@@ -399,8 +397,8 @@ section.footer .section-container {
     display: inline-block;
     width: 55px;
     height: 55px;
-    background: url('../img/ibudget.svg') 0 0 no-repeat;
-    background-size: contain;
+    background: url('../img/ibudget.svg') center 0 no-repeat;
+    background-size: 55px;
     vertical-align: middle;
     margin: 0 0 3px 25px;
 }
@@ -412,8 +410,7 @@ section.footer .section-container {
 }
 
 .budget-link:hover:after {
-    background: url('../img/ibudget-hover.svg') 0 0 no-repeat;
-    background-size: contain;
+    background-position: center bottom;
 }
 
 .donators-info b {
