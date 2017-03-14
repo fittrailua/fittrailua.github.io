@@ -256,10 +256,19 @@ section.footer .section-container {
 .schema-notes>div,
 .stand-notes>div,
 .video-notes>div {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     padding-left: 25px;
     font-weight: 300;
     letter-spacing: 0.5px;
+}
+
+.schema-notes h2,
+.stand-notes h2,
+.video-notes h2 {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 28px;
+    margin-top: 0;
 }
 
 .schema-notes>div:before,
