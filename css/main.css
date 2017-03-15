@@ -635,7 +635,7 @@ h2 {
 }
 
 .path-svg-container-initial {
-    display: none;
+    /*display: none;*/
 }
 
 .path-svg,
@@ -682,7 +682,7 @@ h2 {
     }
 
     .path-svg-container-initial {
-        display: block;
+        /*display: block;*/
     }
 }
 
