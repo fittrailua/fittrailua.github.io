@@ -40,10 +40,6 @@ html {
     font-family: 'SegoeUI', 'Helvetica', sans-serif;
 }
 
-body {
-    /*position: relative;*/
-}
-
 section {
     overflow: hidden;
 }
@@ -613,7 +609,7 @@ h2 {
     height: 28px;
     width: 130px;
     padding: 0;
-    margin: 0 3px 0 0;
+    margin: 0 5px 0 0;
     text-align: center;
     background: #de9228;
     background: -webkit-linear-gradient(#de9228, #b5741b);
@@ -632,10 +628,6 @@ h2 {
     max-width: 1024px;
     margin: 0 auto;
     position: relative;
-}
-
-.path-svg-container-initial {
-    /*display: none;*/
 }
 
 .path-svg,
@@ -679,10 +671,6 @@ h2 {
 
     .section-container {
         margin-top: 80px;
-    }
-
-    .path-svg-container-initial {
-        /*display: block;*/
     }
 }
 
@@ -730,6 +718,10 @@ h2 {
     .button.small {
         clear: both;
         margin: 10px 0 0 0;
+    }
+
+    .social-buttons {
+        margin-top: 0;
     }
 }
 
