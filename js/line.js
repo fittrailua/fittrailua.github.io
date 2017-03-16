@@ -17,7 +17,7 @@ $(function() {
 
         scrollPercent = Math.min(scrollPercent, 1);
 
-        var draw = Math.max(200, length * scrollPercent);
+        var draw = Math.max(190, length * scrollPercent);
         path.style.strokeDashoffset = length - draw;
     }
 
