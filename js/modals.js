@@ -1,6 +1,12 @@
 function showModal(modalId) {
     $('#' + modalId + ' .modal').show();
     $('body').css({ overflow: 'hidden' });
+
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'Modal',
+      eventAction: 'show-modal-' + modalId
+    });
 }
 
 function hideModals() {

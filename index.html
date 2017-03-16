@@ -106,7 +106,7 @@
                     <div class="fb-like-wrapper">
                         <div class="fb-like" data-href="https://www.facebook.com/fittrailua/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
                     </div>
-                    <a href="mailto:fittrailua@gmail.com" class="button small">Написати нам</a>
+                    <a href="mailto:fittrailua@gmail.com" id="sendEmail" class="button small">Написати нам</a>
                 </div>
             </div>
         </section>
@@ -189,7 +189,7 @@
 
 
         <div class="section-container donation-box">
-            <a href="img/budget.pdf" class="budget-link" target="_blank">Бюджет &nbsp;&nbsp;<b>241 000 ₴</b></a>
+            <a href="img/budget.pdf" id="showBudget" class="budget-link" target="_blank">Бюджет &nbsp;&nbsp;<b>241 000 ₴</b></a>
 
             <div class="donators-info">
                 <b><span id="numberOfDonators"></span></b>&nbsp;підтримують проект на&nbsp;<b><span id="totalDonations"></span>&nbsp;₴</b>
@@ -230,8 +230,8 @@
             <iframe id="noTarget" name="noTarget" style="visibility: hidden; width: 0; height: 0;"></iframe>
 
             <div class="info-cta">
-                <a href="http://bit.ly/ft-sketches" class="sketches-link" target="_blank">Креслення</a>
-                <a href="http://bit.ly/fittrailua-brief" class="brochure-link" target="_blank">Брошура</a>
+                <a href="http://bit.ly/ft-sketches" id="showSketches" class="sketches-link" target="_blank">Креслення</a>
+                <a href="http://bit.ly/fittrailua-brief" id="showBrochure" class="brochure-link" target="_blank">Брошура</a>
             </div>
         </div>
         <section class="footer">
@@ -277,6 +277,8 @@
                 </div>
             </div>
         </div>
+
+        <script> window.ga || (window.ga = function() {}) </script>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>

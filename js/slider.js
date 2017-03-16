@@ -31,6 +31,12 @@ $(function() {
             currentSlide -= 1;
 
         $slideWindow.css({ marginLeft: -1 * currentSlide * slideWidth($slider) });
+
+        ga('send', {
+          hitType: 'event',
+          eventCategory: 'Slider',
+          eventAction: 'slider-prev'
+        });
     });
 
     $('.slider-next').on('click', function(event) {
@@ -43,5 +49,11 @@ $(function() {
             currentSlide += 1;
 
         $slideWindow.css({ marginLeft: -1 * currentSlide * slideWidth($slider) });
+
+        ga('send', {
+          hitType: 'event',
+          eventCategory: 'Slider',
+          eventAction: 'slider-next'
+        });
     });
 });
