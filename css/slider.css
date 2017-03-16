@@ -3,6 +3,7 @@
     position: relative;
     margin-right: 45px;
     float: right;
+    z-index: 1;
 }
 
 .slider-prev {

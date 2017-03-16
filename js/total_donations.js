@@ -1,6 +1,7 @@
 $(function() {
   var number = 0;
   var total = 0;
+  var BUDGET = 241000;
 
   var addToTotalDonations = function(amount) {
     number += 1;
@@ -28,6 +29,11 @@ $(function() {
   var updateUI = function() {
     $('#numberOfDonators').text(humanize(number));
     $('#totalDonations').text(total);
+
+    var currentProgress = parseFloat(total / BUDGET * 100).toFixed(1) + '%';
+
+    $('.current-progress').attr('data-content', currentProgress);
+    $('.current-progress').width(currentProgress);
   }
 
   firebase.database().ref().on('value', function(node) {
