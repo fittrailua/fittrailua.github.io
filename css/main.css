@@ -215,7 +215,7 @@ section.footer {
 }
 
 section.footer .section-container {
-    margin: 30px auto 50px;
+    margin: 40px auto;
 }
 
 #runner {
@@ -464,11 +464,15 @@ h2 {
     margin-bottom: 30px;
 }
 
-.team {
+.team, .partners {
     text-align: center;
-    margin-bottom: 40px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
     border-bottom: 1px solid #ddd;
+}
+
+.partners {
+    padding-bottom: 10px;
 }
 
 .team .team-member {
@@ -487,11 +491,12 @@ h2 {
     font-weight: 300;
 }
 
-.sign {
+.footer-title {
     margin: 20px 0;
     color: #08502b;
     font-size: 26px;
     text-align: center;
+    letter-spacing: 1.5px;
 }
 
 .team .avatar {
@@ -504,6 +509,31 @@ h2 {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     margin: 10px 0;
+}
+
+.partner {
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 35px;
+    display: inline-block;
+}
+
+.partner-title {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+}
+
+.partner:hover .partner-title {
+    color: #333;
+}
+
+.partner-logo {
+    width: 150px;
 }
 
 #donationFormFeedback {
@@ -719,7 +749,7 @@ h2 {
         margin: 0 20px 0 0;
     }
 
-    .sign {
+    .footer-title {
         font-size: 24px;
     }
 
@@ -742,7 +772,7 @@ h2 {
         font-size: 16px;
     }
 
-    .sign {
+    .footer-title {
         font-size: 26px;
     }
 }
@@ -890,6 +920,18 @@ h2 {
 
     .current-progress, .progress {
         height: 5px;
+    }
+
+    .partner-logo {
+        width: 100px;
+    }
+
+    .partner-title {
+        font-size: 18px;
+    }
+
+    .partner {
+        margin: 10px;
     }
 }
 
