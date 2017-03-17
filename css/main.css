@@ -620,7 +620,8 @@ h2 {
 }
 
 .donation-input:focus,
-.donation-submit:focus {
+.donation-submit:focus,
+a:focus {
     outline: none;
 }
 
@@ -671,9 +672,10 @@ h2 {
     float: right;
     display: inline-block;
     font-size: 16px;
+    letter-spacing: 1px;
     line-height: 26px;
     height: 28px;
-    width: 130px;
+    width: 150px;
     padding: 0;
     margin: 0 5px 0 0;
     text-align: center;

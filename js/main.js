@@ -8,6 +8,15 @@ $(function() {
         });
     });
 
+    $('#supportUs').on('click', function() {
+        ga('send', {
+          hitType: 'event',
+          eventCategory: 'Links',
+          eventAction: 'support-us',
+          eventLabel: 'Landing Page'
+        });
+    });
+
     $('#showBudget').on('click', function() {
         ga('send', {
           hitType: 'event',
