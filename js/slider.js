@@ -35,7 +35,8 @@ $(function() {
         ga('send', {
           hitType: 'event',
           eventCategory: 'Slider',
-          eventAction: 'slider-prev'
+          eventAction: 'slider-prev',
+          eventLabel: 'Landing Page'
         });
     });
 
@@ -53,7 +54,8 @@ $(function() {
         ga('send', {
           hitType: 'event',
           eventCategory: 'Slider',
-          eventAction: 'slider-next'
+          eventAction: 'slider-next',
+          eventLabel: 'Landing Page'
         });
     });
 });

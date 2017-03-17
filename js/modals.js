@@ -5,7 +5,8 @@ function showModal(modalId) {
     ga('send', {
       hitType: 'event',
       eventCategory: 'Modal',
-      eventAction: 'show-modal-' + modalId
+      eventAction: 'show-modal-' + modalId,
+      eventLabel: 'Landing Page'
     });
 }
 

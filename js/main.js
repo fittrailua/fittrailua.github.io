@@ -3,7 +3,8 @@ $(function() {
         ga('send', {
           hitType: 'event',
           eventCategory: 'Links',
-          eventAction: 'send-email'
+          eventAction: 'send-email',
+          eventLabel: 'Landing Page'
         });
     });
 
@@ -11,7 +12,8 @@ $(function() {
         ga('send', {
           hitType: 'event',
           eventCategory: 'Links',
-          eventAction: 'show-budget'
+          eventAction: 'show-budget',
+          eventLabel: 'Landing Page'
         });
     });
 
@@ -19,7 +21,8 @@ $(function() {
         ga('send', {
           hitType: 'event',
           eventCategory: 'Forms',
-          eventAction: 'click-donate-button'
+          eventAction: 'click-donate-button',
+          eventLabel: 'Landing Page'
         });
     });
 
@@ -27,7 +30,8 @@ $(function() {
         ga('send', {
           hitType: 'event',
           eventCategory: 'Links',
-          eventAction: 'show-brochure'
+          eventAction: 'show-brochure',
+          eventLabel: 'Landing Page'
         });
     });
 
@@ -35,7 +39,8 @@ $(function() {
         ga('send', {
           hitType: 'event',
           eventCategory: 'Links',
-          eventAction: 'show-sketches'
+          eventAction: 'show-sketches',
+          eventLabel: 'Landing Page'
         });
     });
 });
