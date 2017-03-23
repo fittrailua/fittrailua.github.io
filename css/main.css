@@ -689,6 +689,7 @@ a:focus {
 #sendEmail {
     float: none;
     margin-top: 20px;
+    vertical-align: bottom;
 }
 
 .donation-submit:hover,
