@@ -686,6 +686,11 @@ a:focus {
     background: linear-gradient(#de9228, #b5741b);
 }
 
+#sendEmail {
+    float: none;
+    margin-top: 20px;
+}
+
 .donation-submit:hover,
 .button:hover {
     background-color: #dfa528;

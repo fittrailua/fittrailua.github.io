@@ -106,8 +106,7 @@
                     <div class="fb-like-wrapper">
                         <div class="fb-like" data-href="https://www.facebook.com/fittrailua/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
                     </div>
-                    <!-- <a href="mailto:fittrailua@gmail.com" id="sendEmail" class="button small">Написати нам</a>
- -->
+
                     <a href="#showBudget" id="supportUs" class="button small">Підтримати нас</a>
                 </div>
             </div>
@@ -290,6 +289,7 @@
             </div>
             <div class="section-container">
                 <div class="fb-like" data-href="https://www.facebook.com/fittrailua/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                <a href="mailto:fittrailua@gmail.com" id="sendEmail" class="button small">Написати нам</a>
             </div>
         </section>
 
@@ -318,6 +318,14 @@
             e.src='https://www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-93549949-1','auto');ga('send','pageview');
+        </script>
+
+        <script src="js-webshim/minified/polyfiller.js"></script>
+
+        <script>
+            webshim.activeLang('en');
+            webshims.polyfill('forms');
+            webshims.cfg.no$Switch = true;
         </script>
 
         <script src="js/vendor/retina.min.js"></script>
